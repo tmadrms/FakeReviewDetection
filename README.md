@@ -23,7 +23,17 @@ Data Source: [Fake Reviews Dataset](https://www.kaggle.com/datasets/mexwell/fake
 - **Model Training and Evaluation**: Models including Logistic Regression, Support Vector Machines (SVM), and Random Forest were trained. GridSearchCV was applied for hyperparameter tuning, and models were evaluated using accuracy metrics.
 
 #### Results
-The following accuracy results were obtained from the models:
+
+##### Confusion Matrix Explained
+A confusion matrix visualizes a classification model's performance by showing:
+- True Positives (correctly predicted positive cases)
+- True Negatives (correctly predicted negative cases)
+- False Positives (incorrectly predicted positive)
+- False Negatives (incorrectly predicted negative)
+
+##### Legend: 0 = Not Fake, 1 = Fake
+
+The following results were obtained from the best performing models:
 - **SVM**: **87.40%** 
     - ![Confusion Matrix](images/svm_confusion_matrix.png)
 - **Logistic Regression**: **87.18%** 
