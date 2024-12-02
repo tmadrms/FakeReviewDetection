@@ -20,15 +20,17 @@ Data Source: [Fake Reviews Dataset](https://www.kaggle.com/datasets/mexwell/fake
 #### Methodology
 - **Data Exploration and Preprocessing**: Text data was cleaned using the Natural Language Toolkit (NLTK). Steps included converting text to lowercase, removing selected punctuation, tokenization, stopword removal, and lemmatization.
 - **Feature Engineering**: TF-IDF was employed to transform textual data into numerical vectors. Sentiment analysis was also used to generate additional features for training.
-- **Model Training and Evaluation**: Models including Logistic Regression, Support Vector Machines (SVM), and Random Forest were trained. Grid Search was applied for hyperparameter tuning, and models were evaluated using accuracy metrics.
+- **Model Training and Evaluation**: Models including Logistic Regression, Support Vector Machines (SVM), and Random Forest were trained. GridSearchCV was applied for hyperparameter tuning, and models were evaluated using accuracy metrics.
 
 #### Results
 The following accuracy results were obtained from the models:
-- **SVM**: **87.40%**
-- **Logistic Regression**: **87.18%**
-- **Random Forest**: **84.40%**
+- **SVM**: **87.40%** 
+    - ![Confusion Matrix](images/svm_confusion_matrix.png)
+- **Logistic Regression**: **87.18%** 
+    - ![Confusion Matrix](images/logistic_reg_confusion_matrix.png)
+- **Random Forest**: **84.40%** 
+    - ![Confusion Matrix](images/random_for_confusion_matrix.png)
 
-SVM's performance benefited from the RBF kernel and hyperparameter optimization.
 
 #### Next Steps
 - Expand the training dataset by incorporating reviews from a broader range of websites to enhance the model's learning capabilities.
